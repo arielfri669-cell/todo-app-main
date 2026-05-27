@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background: #f0efff;
   color: #2d005f;
+  background-color: burlywood;
 }
 
 .container {
@@ -40,3 +41,41 @@ body {
   text-decoration: none;
   border-radius: 10px;
 }
+
+
+.my-div{
+  width:50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+  gap:20px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,td{
+     border:2px solid black;
+     padding: 20px;
+     text-align: center;
+}
+th{
+  background-color: crimson;
+}
+td{
+  background-color: rgb(233, 197, 105);
+}
+
+.my-div img{
+  width: 100%;
+}
+.my-div p{
+  font-size: larger;
+  
+}
+ 
