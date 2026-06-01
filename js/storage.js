@@ -1,3 +1,6 @@
+
+// storage.js
+
 function getTodos() {
   return JSON.parse(localStorage.getItem("todos")) || [];
 }
