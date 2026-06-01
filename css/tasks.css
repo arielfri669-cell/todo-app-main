@@ -1,25 +1,25 @@
 /* tasks.css */
 
 .todo-box {
-  max-width: 760px;
-  margin: 30px auto;
-  background: white;
-  padding: 40px;
+  max-width: 780px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 36px;
   border-radius: 28px;
-  box-shadow: 0 15px 35px rgba(30, 41, 59, 0.15);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .todo-box h1 {
   text-align: center;
-  font-size: 40px;
-  color: #1d4ed8;
-  margin-bottom: 32px;
+  color: #1e3a8a;
+  font-size: 38px;
 }
 
 .todo-form {
   display: flex;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .todo-form input {
@@ -30,18 +30,20 @@
   font-size: 17px;
   outline: none;
   background: #f8fafc;
+  color: #0f172a;
 }
 
 .todo-form input:focus {
   border-color: #2563eb;
-  background: white;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
 }
 
 .todo-form button {
-  padding: 16px 28px;
+  padding: 16px 26px;
   border: none;
-  background: #2563eb;
-  color: white;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
   border-radius: 16px;
   cursor: pointer;
   font-size: 17px;
@@ -50,8 +52,8 @@
 }
 
 .todo-form button:hover {
-  background: #1d4ed8;
   transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.3);
 }
 
 .filters {
@@ -63,9 +65,9 @@
 .filters button {
   flex: 1;
   padding: 13px;
-  border: 2px solid #bfdbfe;
-  background: white;
-  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  background: #ffffff;
+  color: #1e3a8a;
   border-radius: 16px;
   cursor: pointer;
   font-size: 16px;
@@ -74,13 +76,13 @@
 }
 
 .filters button:hover {
-  background: #eff6ff;
+  background: #dbeafe;
 }
 
 .filters button.active {
-  background: #2563eb;
-  color: white;
-  border-color: #2563eb;
+  background: #1d4ed8;
+  color: #ffffff;
+  border-color: #1d4ed8;
 }
 
 .todo-list {
@@ -88,7 +90,7 @@
 }
 
 .todo-item {
-  background: #f8fafc;
+  background: #ffffff;
   padding: 18px 20px;
   border-radius: 18px;
   margin-bottom: 14px;
@@ -97,12 +99,13 @@
   align-items: center;
   gap: 14px;
   border: 1px solid #dbeafe;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
   transition: 0.3s;
 }
 
 .todo-item:hover {
-  background: #eff6ff;
   transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
 }
 
 .todo-content {
@@ -110,7 +113,7 @@
   align-items: center;
   gap: 12px;
   font-size: 18px;
-  color: #1e293b;
+  color: #0f172a;
 }
 
 .todo-content input {
@@ -125,9 +128,9 @@
 }
 
 .delete-btn {
-  background: #ef4444;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 11px 18px;
   border-radius: 14px;
   cursor: pointer;
@@ -137,17 +140,18 @@
 }
 
 .delete-btn:hover {
-  background: #dc2626;
   transform: scale(1.05);
+  box-shadow: 0 10px 18px rgba(220, 38, 38, 0.3);
 }
 
 @media (max-width: 700px) {
   .todo-box {
-    padding: 25px;
+    padding: 24px;
+    margin-top: 20px;
   }
 
   .todo-box h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .todo-form {
